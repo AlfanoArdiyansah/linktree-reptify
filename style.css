@@ -115,7 +115,7 @@ nav {
 /* gallery */
 .gallery {
   min-height: 100vh;
-  background-color: rgb(208, 235, 175);
+  background-color: rgb(215, 236, 190);
 }
 
 .judul {
@@ -158,10 +158,16 @@ nav {
 
   .home .profile img {
     width: 20%;
+    margin-top: 10rem;
+  }
+
+  .home {
+    min-height: 65vh;
   }
 
   .link {
     height: 80px;
+    margin-bottom: 2rem;
   }
 
   .gambar img {
@@ -176,14 +182,15 @@ nav {
 
   .nav-item.active {
     right: 0;
-    width: 40%;
-    height: 98vh;
+    width: 60%;
+    height: 50rem;
     margin-right: 0;
     background-color: aqua;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
+    align-items: center;
     font-size: 2rem;
     background-color: rgb(195, 233, 195);
     border-bottom-left-radius: 14px;
@@ -197,7 +204,6 @@ nav {
     top: 0;
     right: 0;
     margin-right: 12px;
-    margin-top: 3px;
   }
 }
 
