@@ -16,9 +16,29 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
-    <div class="home">
+    <!-- navbar -->
+    <nav>
+      <div class="nav-content">
+        <div class="brand">Reptify</div>
+        <div class="nav-item">
+          <a href="#home">Home</a>
+          <a href="#gallery">Gallery</a>
+        </div>
+      </div>
+      <div class="nav-extra">
+        <div class="nav-menu" id="menu">
+          <i data-feather="menu"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- home -->
+    <div class="home" id="home">
       <div class="profile">
         <img src="img/logo-hd.jpg" alt="logo" />
       </div>
@@ -41,7 +61,7 @@
       </div>
 
       <div class="link">
-        <a href="https://wa.me/+6282331474678" target="_blank">
+        <a href="https://wa.me/+6282336751993" target="_blank">
           <div class="wa">
             <div class="icon">
               <i class="fa-brands fa-whatsapp fa-2x" style="color: #15b400"></i>
@@ -51,5 +71,52 @@
         </a>
       </div>
     </div>
+    <!-- akhir home -->
+
+    <!-- gallery -->
+    <div class="gallery" id="gallery">
+      <div class="judul">
+        <h2>Gallery</h2>
+      </div>
+      <div class="parents">
+        <div class="container">
+          <div class="isi">
+            <div class="gambar">
+              <img src="img/pacman-1.jpeg" alt="" />
+            </div>
+            <div class="gambar">
+              <img src="img/pacman-eye.jpeg" alt="" />
+            </div>
+            <div class="gambar">
+              <img src="img/bs.jpeg" alt="" />
+            </div>
+            <div class="gambar">
+              <img src="img/baby-2.jpeg" alt="" />
+            </div>
+            <div class="gambar">
+              <img src="img/baby-1.jpeg" alt="" />
+            </div>
+            <div class="gambar">
+              <img src="img/baby-3.jpeg" alt="" />
+            </div>
+            <div class="gambar">
+              <img src="img/wy-1.jpeg" alt="" />
+            </div>
+            <div class="gambar">
+              <img src="img/wy-2.jpeg" alt="" />
+            </div>
+            <div class="gambar">
+              <img src="img/baby-4.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir gallery -->
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="script.js"></script>
   </body>
 </html>

@@ -4,14 +4,62 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
+/* nav */
+nav {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  background-color: rgb(176, 231, 176);
+  position: fixed;
+  width: 100%;
+}
+
+.nav-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  margin-left: 3.2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.nav-item {
+  margin-right: 7rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.nav-item a {
+  margin-left: 2rem;
+  transition: 0.2s;
+}
+
+.nav-item a:hover {
+  opacity: 0.2;
+}
+
+#menu {
+  display: none;
+}
+/* akhir nav */
+
+/* home */
 .home {
   min-height: 100vh;
-  background-color: rgb(143, 163, 137);
+  background-color: rgb(124, 165, 111);
   padding-bottom: 2rem;
 }
 
@@ -21,8 +69,9 @@ a {
 
 .home .profile img {
   width: 15%;
-  margin-top: 2.5rem;
+  margin-top: 4rem;
   border-radius: 50%;
+  box-shadow: 1px 1px 5px 1px black;
 }
 
 .bio {
@@ -39,6 +88,7 @@ a {
   margin: 1rem auto;
   border-radius: 50px;
   transition: 0.3s;
+  box-shadow: 1px 1px 3px 0.5px black;
 }
 
 .link:hover {
@@ -60,6 +110,44 @@ a {
   color: black;
   margin-left: 1.5rem;
 }
+/* akhir home */
+
+/* gallery */
+.gallery {
+  min-height: 100vh;
+  background-color: rgb(208, 235, 175);
+}
+
+.judul {
+  text-align: center;
+  padding-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.parents {
+  width: 80%;
+  margin: auto;
+}
+
+.container {
+  width: min-content;
+  margin: auto;
+  padding: 2px;
+  border: 5px solid black;
+}
+
+.isi {
+  display: flex;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+}
+
+.gambar img {
+  width: 200px;
+}
+/* akhir gallery */
 
 /* responsive */
 
@@ -74,6 +162,42 @@ a {
 
   .link {
     height: 80px;
+  }
+
+  .gambar img {
+    width: 130px;
+  }
+
+  .nav-item {
+    position: absolute;
+    top: 0;
+    right: -100%;
+  }
+
+  .nav-item.active {
+    right: 0;
+    width: 40%;
+    height: 98vh;
+    margin-right: 0;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 2rem;
+    background-color: rgb(195, 233, 195);
+    border-bottom-left-radius: 14px;
+    transition: 0.2s;
+  }
+
+  #menu {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 12px;
+    margin-top: 3px;
   }
 }
 
@@ -92,5 +216,9 @@ a {
 
   .link {
     height: 50px;
+  }
+
+  .isi {
+    grid-template-columns: 1fr;
   }
 }
