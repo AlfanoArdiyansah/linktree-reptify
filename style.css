@@ -21,6 +21,7 @@ nav {
   background-color: rgb(176, 231, 176);
   position: fixed;
   width: 100%;
+  z-index: 99;
 }
 
 .nav-content {
@@ -115,7 +116,7 @@ nav {
 /* gallery */
 .gallery {
   min-height: 100vh;
-  background-color: rgb(214, 233, 190);
+  background-color: rgb(202, 222, 188);
 }
 
 .judul {
@@ -141,11 +142,39 @@ nav {
   flex-wrap: wrap;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3px;
+  gap: 10px;
+  margin: 0 0.3rem;
 }
 
 .gambar img {
   width: 200px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: 0.2s;
+}
+
+.gambar img:hover {
+  /* gunakan comment dibawah untuk transisi zoom */
+  /* padding-top: 10px;
+  padding-left: 4px;
+  width: 210px; */
+  border-radius: 50%;
+}
+
+.gambar {
+  position: relative;
+}
+
+.p-gambar p {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50%;
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  cursor: pointer;
 }
 /* akhir gallery */
 
@@ -154,6 +183,10 @@ nav {
 @media (max-width: 786px) {
   html {
     font-size: 62.5%;
+  }
+
+  nav {
+    height: 4rem;
   }
 
   .home .profile img {
@@ -201,7 +234,7 @@ nav {
     display: block;
     cursor: pointer;
     position: absolute;
-    top: 0;
+    top: 5.2px;
     right: 0;
     margin-right: 12px;
   }
@@ -220,11 +253,17 @@ nav {
     width: 80%;
   }
 
+  .bio {
+    margin-bottom: 4rem;
+  }
+
   .link {
-    height: 50px;
+    height: 70px;
+    margin-bottom: 3rem;
   }
 
   .isi {
     grid-template-columns: 1fr;
+    gap: 3px;
   }
 }
