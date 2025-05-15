@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
 
     <script src="https://unpkg.com/feather-icons"></script>
@@ -23,10 +23,11 @@
     <!-- navbar -->
     <nav>
       <div class="nav-content">
-        <div class="brand">Reptify</div>
+        <div class="brand">Rep<span>tify</span></div>
         <div class="nav-item">
           <a href="#home">Home</a>
-          <a href="#gallery">Gallery</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
       <div class="nav-extra">
@@ -39,104 +40,230 @@
 
     <!-- home -->
     <div class="home" id="home">
-      <div class="profile">
-        <img src="img/logo-hd.jpg" alt="logo" />
-      </div>
-      <div class="bio">
-        <p>
-          Lagi pengen punya Reptil? Bisa diatur, Klik link dibawah ya!! 👇😉👇
-        </p>
-      </div>
-
-      <div class="link">
-        <a href="https://wa.me/+6282336751993" target="_blank">
-          <div class="wa">
-            <div class="icon">
-              <i class="fa-brands fa-whatsapp fa-2x" style="color: #13a700"></i>
+      <div class="container-home">
+        <div class="profile">
+          <img src="img/logo-hd.jpg" alt="Logo" />
+        </div>
+        <div class="link">
+          <div class="text">
+            <div class="heading">
+              <h2>Rep<span>tify</span></h2>
             </div>
-            <div class="text"><p>Chat via WhatsApp</p></div>
+
+            <div class="paragraph">
+              <p>
+                Menjual berbagai macam jenis reptil peliharaan🦎 <br />
+                Kalau mau beli langsung Dm/Chat kami di link di bawah ini!! atau
+                bisa juga klik "Tanya Admin" 👇👇
+              </p>
+            </div>
           </div>
-        </a>
-      </div>
 
-      <div class="link">
-        <a href="https://www.instagram.com/reptify.official" target="_blank">
-          <div class="ig">
-            <div class="icon">
-              <i
-                class="fa-brands fa-instagram fa-2x"
-                style="color: rgb(221, 0, 0)"
-              ></i>
+          <div class="hub">
+            <div class="medsos-link">
+              <div class="wa">
+                <a href="https://wa.me/+6282336751993" target="_blank">
+                  <i
+                    class="fa-brands fa-square-whatsapp"
+                    style="color: #49d100; font-size: 25px"
+                  ></i>
+                  <span>WhatsApp</span>
+                </a>
+              </div>
             </div>
-            <div class="text"><p>Follow kami di Instagram</p></div>
+
+            <div class="medsos-link">
+              <div class="ig">
+                <a
+                  href="https://www.instagram.com/reptify.official"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-brands fa-square-instagram"
+                    style="color: #ff2e2e; font-size: 25px"
+                  ></i>
+                  Instagram
+                </a>
+              </div>
+            </div>
+
+            <div class="medsos-link">
+              <div class="fb">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100085536409429"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-brands fa-square-facebook"
+                    style="color: #005eff; font-size: 25px"
+                  >
+                  </i>
+                  Facebook
+                </a>
+              </div>
+            </div>
           </div>
-        </a>
-      </div>
-    </div>
-    <!-- akhir home -->
 
-    <!-- gallery -->
-    <div class="gallery" id="gallery">
-      <div class="judul">
-        <h2>Gallery</h2>
-      </div>
-      <div class="parents">
-        <div class="container">
-          <div class="isi">
-            <div class="gambar">
-              <div class="p-gambar">
-                <img src="img/pacman-1.jpeg" alt="" />
-              </div>
-            </div>
-            <div class="gambar">
-              <div class="p-gambar">
-                <img src="img/pacman-eye.jpeg" alt="" />
-              </div>
-            </div>
-            <div class="gambar">
-              <div class="p-gambar">
-                <img src="img/bs.jpeg" alt="" />
-              </div>
-            </div>
-            <div class="gambar">
-              <div class="p-gambar">
-                <img src="img/baby-2.jpeg" alt="" />
-              </div>
-            </div>
-            <div class="gambar">
-              <div class="p-gambar">
-                <img src="img/baby-1.jpeg" alt="" />
-              </div>
-            </div>
-            <div class="gambar">
-              <div class="p-gambar">
-                <img src="img/baby-3.jpeg" alt="" />
-              </div>
-            </div>
-            <div class="gambar">
-              <div class="p-gambar">
-                <img src="img/wy-1.jpeg" alt="" />
-              </div>
-            </div>
-            <div class="gambar">
-              <div class="p-gambar">
-                <img src="img/wy-2.jpeg" alt="" />
-              </div>
-            </div>
-            <div class="gambar">
-              <div class="p-gambar">
-                <img src="img/baby-4.jpeg" alt="" />
-              </div>
+          <div class="admin">
+            <div class="buy">
+              <a href="https://wa.me/+6282336751993" target="_blank"
+                ><i class="fa-solid fa-phone" style="color: #cccccc"></i>Tanya
+                Admin</a
+              >
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- akhir gallery -->
+    <!-- akhir home -->
+
+    <div class="about" id="about">
+      <div class="heading-pages">
+        <h1>Tentang Kami</h1>
+      </div>
+
+      <div class="container-about">
+        <div class="image-about" data-aos="fade-right" data-aos-delay="250">
+          <img src="img/a1.png" alt="cutes reptile" />
+        </div>
+
+        <div class="text-about" data-aos="fade-left" data-aos-delay="200">
+          <div class="judul-abt">
+            <h3>Reptify jual apa aja sih??</h3>
+          </div>
+          <div class="ket-abt">
+            <p>
+              Saat ini kita lagi fokus buat jual Leopard gecko sama Pacman frog
+              aja yah, untuk reptil jenis lain kita masih perlu kembangkan dan
+              pelajari lagi, karena yang namanya jualan hewan si penjual harus
+              bener-bener paham sama hewan yang dijual, mau itu dari segi
+              perawatan ,jenis/morph ,dll. karena nanti kalau ada pembeli yang
+              nanya terus kita gak paham "Ruuugi doonk"
+            </p>
+            <p>
+              <span>
+                "Kurang lebih gitu deh pokonya"
+                <span style="font-weight: 400">hehe.</span> 😄😄</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-about ca-2">
+        <div class="image-about" data-aos="fade-left" data-aos-delay="250">
+          <img src="img/a2.png" alt="cutes reptile" />
+        </div>
+
+        <div class="text-about" data-aos="fade-right" data-aos-delay="200">
+          <div class="judul-abt">
+            <h3>Apa sih yang buat Reptify beda dari yang lain??</h3>
+          </div>
+          <div class="ket-abt">
+            <p>
+              Kalau kamu beli hewan dari kami sudah pasti free konsultasi
+              seputar hewan tersebut seumur hidup. Pertanyaan yang kamu berikan
+              dijawab dari hasil pengalaman kami dari merawat hewan selama
+              bertahun-tahun. jadi gausah ragu deh kalau belinya di Reptify mah,
+              pokonya bakal dipandu super lengkap.
+            </p>
+            <p>
+              Disini kita juga selalu mengutamakan kesehatan hewan loh, kalau
+              ada hewan yang sakit atau ada minus di kesehatan, gak bakal kita
+              jual.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div class="contact" id="contact">
+      <div class="heading-pages">
+        <h1>Kontak</h1>
+      </div>
+      <div class="parent-contact">
+        <div class="pesan" data-aos="zoom-out-right">
+          <div class="judhul">
+            <p>Isi form dibawah untuk kritik dan saran</p>
+          </div>
+          <form action="">
+            <input type="text" placeholder="Nama Lengkap" />
+            <input type="email" placeholder="Alamat Email" />
+            <textarea name="pesan" placeholder="pesan"></textarea>
+            <div class="tombol">
+              <button type="submit">Kirim</button>
+              <button type="reset">Reset</button>
+            </div>
+          </form>
+        </div>
+        <div class="info" data-aos="zoom-out-left">
+          <div class="judhul">
+            <p>Informasi Kontak</p>
+          </div>
+          <div class="isi">
+            <div class="link-sosmed">
+              <a href="https://wa.me/+6282336751993">+62823-3675-1993</a>
+            </div>
+            <div class="icon-sosmed">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+          </div>
+          <div class="isi">
+            <div class="link-sosmed">
+              <a href="https://maps.app.goo.gl/gUFvh6McHU5rLMBy6"
+                >Google maps</a
+              >
+            </div>
+            <div class="icon-sosmed">
+              <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+          </div>
+          <div class="isi">
+            <div class="link-sosmed">
+              <a href="https://www.facebook.com/profile.php?id=100085536409429"
+                >Gutty</a
+              >
+            </div>
+            <div class="icon-sosmed">
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+          </div>
+          <div class="isi">
+            <div class="link-sosmed">
+              <a href="https://www.instagram.com/reptify.official"
+                >@reptify_official</a
+              >
+            </div>
+            <div class="icon-sosmed">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir contact -->
+
+    <!-- footer -->
+    <footer>
+      <div class="text">
+        <p>
+          Created by
+          <a href="https://www.instagram.com/frank_alweis/"
+            >Alfano ardiyansah</a
+          >
+          | &copy; 2025
+        </p>
+      </div>
+    </footer>
     <script>
       feather.replace();
     </script>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
